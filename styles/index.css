@@ -1,0 +1,133 @@
+.dark {
+  --color-text-01: #fff;
+  --color-text-02: #fff;
+  --color-text-03: #fbfbfb;
+  --color-link-01: #6c86ad;
+  --color-link-01-hover: #fff;
+  --color-link-01-active: #fff;
+  --color-link-01-disabled: #6c86ad;
+  --color-bg-01: #06070a;
+  --color-bg-02: #131823;
+  --color-bg-03: rgba(6, 10, 16, 0.5);
+  --color-bg-04: rgba(6, 7, 10, 0.72);
+  --color-bg-05: #06070a;
+  --color-page-bg-01: radial-gradient(
+      72.14% 72.48% at 8.14% -22.48%,
+      rgba(47, 138, 245, 0.4) 0%,
+      rgba(0, 43, 94, 0) 100%
+    ),
+    linear-gradient(0deg, #06070a, #06070a);
+  --color-page-bg-02: #06070a;
+  --color-btn-bg-01: #324054;
+  --color-btn-bg-02: #131823;
+  --color-btn-bg-03: #324054;
+  --color-btn-bg-04: rgba(47, 138, 245, 0.4);
+  --color-btn-gradient-bg-01: linear-gradient(
+    73.28deg,
+    #403c3c 6.51%,
+    #403721 88.45%
+  );
+  --color-btn-gradient-bg-02: linear-gradient(
+    73.28deg,
+    #495bfc 6.51%,
+    #114188 88.45%
+  );
+  --color-btn-shadow-01: 0 5px 20px rgba(0, 0, 0, 0.25);
+  --color-shadow-01: 0 0 4px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.25);
+  --color-shadow-02: 0 16px 40px rgba(0, 0, 0, 0.6),
+    0px -8px 32px rgba(0, 0, 0, 0.25);
+  --color-border-01: #202835;
+  --color-border-02: #37445a;
+  --color-1inch-gray: #7e96b8;
+  --color-blue-accent: #3179e4;
+  --color-link-blue: #2f8af5;
+  --color-border-lightGrey: #202835;
+  --color-darkMainBlue: #1c2d4a;
+  --color-iconButtonActive: #59f;
+  --color-bgIconButton: #212a3b;
+  --color-iconButton: #fff;
+  --color-bgBlackInput: #060a10;
+  --color-blackInput: #fff;
+  --color-textDropdown: #fff;
+  --color-subCard: #273a55;
+  --color-warningText03: #21c187;
+  --color-routing-box: #4b607e1a;
+}
+
+.light {
+  --color-text-01: #222;
+  --color-text-02: #2f8af5;
+  --color-text-03: #06070a;
+  --color-link-01: #222;
+  --color-link-01-hover: #222;
+  --color-link-01-active: #2f8af5;
+  --color-link-01-disabled: #6c86ad;
+  --color-bg-01: #f3f5fa;
+  --color-bg-02: #fff;
+  --color-bg-03: #ecf0f9;
+  --color-bg-04: rgba(108, 134, 173, 0.6);
+  --color-bg-05: #ecf0f9;
+  --color-page-bg-01: radial-gradient(
+    75.78% 64.8% at 0% -28.29%,
+    rgba(73, 157, 255, 0.4) 0%,
+    hsla(0, 0%, 100%, 0) 100%
+  );
+  --color-page-bg-02: #f3f5fa;
+  --color-page-bg-03: #f4f6ff;
+  --color-btn-bg-01: #fff;
+  --color-btn-bg-02: #fff;
+  --color-btn-bg-03: #ecf0f9;
+  --color-btn-bg-04: rgba(47, 138, 245, 0.16);
+  --color-btn-gradient-bg-01: linear-gradient(
+    73.28deg,
+    #3c3e46 6.51%,
+    #535961 88.45%
+  );
+  --color-btn-gradient-bg-02: linear-gradient(
+    73.28deg,
+    #495bfc 6.51%,
+    #3f85ee 88.45%
+  );
+  --color-btn-shadow-01: none;
+  --color-shadow-01: 0px 4px 4px rgba(214, 223, 240, 0.5), 0px 8px 18px #dae2f1;
+  --color-shadow-02: 0px 4px 4px rgba(214, 223, 240, 0.5), 0px 8px 18px #dae2f1;
+  --color-border-01: #e3e7ee;
+  --color-border-02: #e3e7ee;
+  --color-1inch-gray: #7e96b8;
+  --color-blue-accent: #3179e4;
+  --color-link-blue: #2f8af5;
+  --color-border-lightGrey: #dee7f3;
+  --color-darkMainBlue: #59f;
+  --color-iconButtonActive: #fff;
+  --color-bgIconButton: #dfebff;
+  --color-iconButton: #59f;
+  --color-bgBlackInput: #f1f7ff;
+  --color-blackInput: #272a30;
+  --color-textDropdown: #191f2a;
+  --color-subCard: #59f3;
+  --color-warningText03: #00897b;
+  --color-routing-box: #2a79e31a;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .form-control {
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    color: #495057;
+    background: #fff;
+    background-clip: padding-box;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    @apply block w-full font-normal text-base rounded;
+  }
+
+  .routing-image {
+    right: -34px;
+    top: calc(50% - 13px);
+  }
+}

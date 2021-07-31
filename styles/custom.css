@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  line-height: 1;
+}
+
+svg {
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.justify-content-between {
+  justify-content: space-between !important;
+}
+
+.mb-80 {
+  margin-bottom: 80px !important;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.page-content-wrap {
+  min-height: calc(100vh - 100px);
+}
+
+button {
+  margin: 0;
+  font-family: inherit;
+  line-height: inherit;
+}
